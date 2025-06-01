@@ -25,6 +25,11 @@ tasks.dokkaHtml.configure {
     outputDirectory.set(buildDir.resolve("dokka"))
 }
 
+tasks.dokkaHtml.configure {
+    outputDirectory.set(project.layout.buildDirectory.dir("dokka"))
+}
+
+
 
 tasks.test {
     useJUnitPlatform()
