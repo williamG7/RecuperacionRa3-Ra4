@@ -9,7 +9,7 @@ import java.util.Scanner
  * y lanza el menú principal
  * @author William Guzman
  */
-fun main() {
+fun main(){
     val scan = abrirScanner()
     val busos = mutableListOf<Autobus>()
     val conductors = mutableListOf<Conductor>()
@@ -26,17 +26,17 @@ fun main() {
  * @param conductors lista mutable de conductores
  */
 fun menu(scan: Scanner, busos: MutableList<Autobus>, conductors: MutableList<Conductor>) {
-    var opcion: Int
+    var opcio: Int
     do {
-        mostrarMenu()
-        opcion = scan.nextInt()
-        when (opcion) {
-            1 -> comprarBillete(busos)
+        menuText()
+        opcio = scan.nextInt()
+        when(opcio){
+            1 -> comprarBitllet(busos)
             2 -> menuAdmin(scan, busos, conductors)
-            3 -> println("saliendo...")
-            else -> println("opción inválida")
+            3 -> println("Sortint...")
+            else -> println("Opció invàlida")
         }
-    } while (opcion != 3)
+    } while(opcio != 3)
 }
 
 /**
@@ -46,73 +46,73 @@ fun menu(scan: Scanner, busos: MutableList<Autobus>, conductors: MutableList<Con
  * @param busos lista mutable de autobuses
  * @param conductors lista mutable de conductores
  */
-fun menuAdmin(scan: Scanner, busos: MutableList<Autobus>, conductors: MutableList<Conductor>) {
-    var opcion = 0
+fun menuAdmin(scan:Scanner, busos: MutableList<Autobus>, conductors: MutableList<Conductor>) {
+    var opcio = 0
     do {
-        mostrarMenuAdmin()
-        opcion = scan.nextInt()
-        when (opcion) {
-            1 -> conductors.add(altaConductor(scan))
+        menuTextAdmin()
+        opcio = scan.nextInt()
+        when(opcio){
+            1 -> conductors.add(altaCond(scan))
             2 -> altaBus(scan, busos)
-            3 -> listarBuses(busos)
-            4 -> listarConductores(conductors)
+            3 -> listBus(busos)
+            4 -> listCond(conductors)
         }
-    } while (opcion != 5)
+    }
+    while(opcio !=5)
+
 }
 
 /**
- * Permite comprar un billete mostrando los autobuses disponibles
+ * Permite comprar un bitllet mostrando los autobuses disponibles
  *
  * @param busos lista mutable de autobuses disponibles
  */
-fun comprarBillete(busos: MutableList<Autobus>) {
-    if (busos.isEmpty()) println("no hay autobuses disponibles")
+fun comprarBitllet(busos: MutableList<Autobus>) {
+    if(busos.isEmpty()) println("No hi han autobusos disponibles")
     else {
-        println("autobuses disponibles:")
-        busos.forEachIndexed { i, bus ->
-            println("${i + 1}) id=${bus.getID()} conductor=${bus.getConductor().getNom()} precio=${bus.calcularPreu()}")
+        println("Busos disponibles:")
+        busos.forEachIndexed{
+                i,bus-> println("${i+1}) ID=${bus.getID()} Conductor=${bus.getConductor().getNom()} Preu=${bus.calcularPreu()}")
         }
     }
 }
 
 /**
- * da de alta un nuevo conductor solicitando datos por consola
+ * Da de alta un nuevo conductor solicitando datos por consola
  *
  * @param scan scanner para entrada de usuario
- * @return nuevo objeto conductor creado
+ * @return nuevo objeto Conductor creado
  */
-fun altaConductor(scan: Scanner): Conductor {
-    println("--datos conductor--")
-    print("nombre: ")
-    val nombre = scan.next()
-    print("salario: ")
+fun altaCond(scan:Scanner):Conductor {
+    println("--Datos conductor--")
+    print("Nom: ")
+    val nom = scan.next()
+    print("Salario: ")
     val salario = scan.nextDouble()
-    return Conductor(nombre, salario)
+    return Conductor(nom,salario)
 }
 
 /**
- * da de alta un nuevo autobús urbano o interurbano
+ * Da de alta un nuevo autobús urbano o interurbano
  *
  * @param scan scanner para entrada de usuario
  * @param busos lista mutable de autobuses donde se añadirá el nuevo
  */
-fun altaBus(scan: Scanner, busos: MutableList<Autobus>) {
-    println("""
-        1 - urbano
-        2 - interurbano
+fun altaBus(scan:Scanner, busos: MutableList<Autobus>) {
+    println(""" 
+        1 - Urba 
+        2 - Inter
         """.trimIndent())
-    val tipo = scan.nextInt()
-    print("id: ")
-    val id = scan.nextInt()
-    val conductor = altaConductor(scan)
-    print("precio base: ")
-    val precioBase = scan.nextDouble()
-    if (tipo == 1) {
-        print("ruta: ")
-        busos.add(AutobusUrbans(id, conductor, precioBase, scan.next()))
-    } else {
-        print("km: ")
-        busos.add(AutobusInterurbans(id, conductor, precioBase, scan.nextDouble()))
+    val t=scan.nextInt()
+    print("ID: ")
+    val id=scan.nextInt()
+    val conductor= altaCond(scan)
+    print("PreuBase: ")
+    val p=scan.nextDouble()
+    if(t==1){ print("Ruta: ")
+        busos.add(AutobusUrbans(id,conductor,p,scan.next()))
+    }else{ print("Km: ")
+        busos.add(AutobusInterurbans(id,conductor,p,scan.nextDouble()))
     }
 }
 
@@ -121,9 +121,9 @@ fun altaBus(scan: Scanner, busos: MutableList<Autobus>) {
  *
  * @param busos lista de autobuses
  */
-fun listarBuses(busos: MutableList<Autobus>) {
-    if (busos.isEmpty()) println("no hay autobuses disponibles")
-    else busos.forEach { println(it) }
+fun listBus(busos: MutableList<Autobus>){
+    if(busos.isEmpty()) println("No hi han autobusos disponibles")
+    else busos.forEach{println(it)}
 }
 
 /**
@@ -131,37 +131,37 @@ fun listarBuses(busos: MutableList<Autobus>) {
  *
  * @param conductors lista de conductores
  */
-fun listarConductores(conductors: MutableList<Conductor>) {
-    if (conductors.isEmpty()) println("no hay conductores disponibles")
-    else conductors.forEach { println(it) }
+fun listCond(conductors: MutableList<Conductor>){
+    if(conductors.isEmpty()) println("No hi han conductors disponibles")
+    else conductors.forEach{println(it)}
 }
 
 /** Muestra texto del menú principal */
-fun mostrarMenu() {
+fun menuText(){
     println("""
-            1 - comprar billete
-            2 - gestionar
-            3 - salir
+            1 - Comprar bitllet
+            2 - Gestionar
+            3 - Sortir
         """.trimIndent())
 }
 
 /** Muestra texto del menú administrativo */
-fun mostrarMenuAdmin() {
+fun menuTextAdmin(){
     println("""
-        1 - alta de conductores
-        2 - alta de autobuses
-        3 - listar buses
-        4 - listar conductores
-        5 - volver
-        """.trimIndent())
+        1 - Alta de conductors
+        2 - Alta d'autobusos
+        3 - Llistar busos
+        4 - Llistar Conductors 
+        5 - Enrere""".trimIndent())
 }
 
 /** Abre el scanner para entrada estándar */
-fun abrirScanner(): Scanner {
-    return Scanner(System.`in`)
+fun abrirScanner(): Scanner{
+    val scan = Scanner(System.`in`)
+    return scan
 }
 
 /** Cierra el scanner */
-fun cerrarScanner(scan: Scanner) {
+fun cerrarScanner(scan: Scanner){
     scan.close()
 }
