@@ -1,0 +1,58 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:interfaces////PointingToDeclaration/-git-hub-classroom-template/interfaces/index.html
+$dokka.location:interfaces/MyInterface///PointingToDeclaration/-git-hub-classroom-template/interfaces/-my-interface/index.html
+$dokka.location:models////PointingToDeclaration/-git-hub-classroom-template/models/index.html
+$dokka.location:models/Autobus///PointingToDeclaration/-git-hub-classroom-template/models/-autobus/index.html
+$dokka.location:models/Autobus/Autobus/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/-autobus.html
+$dokka.location:models/Autobus/Autobus/#kotlin.Int#models.Conductor#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/-autobus.html
+$dokka.location:models/Autobus/calcularPreu/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/calcular-preu.html
+$dokka.location:models/Autobus/getConductor/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/get-conductor.html
+$dokka.location:models/Autobus/getID/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/get-i-d.html
+$dokka.location:models/Autobus/getPreuBase/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/get-preu-base.html
+$dokka.location:models/Autobus/setConductor/#models.Conductor/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/set-conductor.html
+$dokka.location:models/Autobus/setID/#kotlin.Int/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/set-i-d.html
+$dokka.location:models/Autobus/setPreuBase/#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/set-preu-base.html
+$dokka.location:models/Autobus/toString/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus/to-string.html
+$dokka.location:models/AutobusInterurbans///PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/index.html
+$dokka.location:models/AutobusInterurbans/AutobusInterurbans/#kotlin.Int#models.Conductor#kotlin.Double#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/-autobus-interurbans.html
+$dokka.location:models/AutobusInterurbans/calcularPreu/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/calcular-preu.html
+$dokka.location:models/AutobusInterurbans/getQuilometres/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/get-quilometres.html
+$dokka.location:models/AutobusInterurbans/setQuilometres/#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/set-quilometres.html
+$dokka.location:models/AutobusInterurbans/toString/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-interurbans/to-string.html
+$dokka.location:models/AutobusUrbans///PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/index.html
+$dokka.location:models/AutobusUrbans/AutobusUrbans/#kotlin.Int#models.Conductor#kotlin.Double#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/-autobus-urbans.html
+$dokka.location:models/AutobusUrbans/calcularPreu/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/calcular-preu.html
+$dokka.location:models/AutobusUrbans/getRuta/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/get-ruta.html
+$dokka.location:models/AutobusUrbans/setRuta/#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/set-ruta.html
+$dokka.location:models/AutobusUrbans/toString/#/PointingToDeclaration/-git-hub-classroom-template/models/-autobus-urbans/to-string.html
+$dokka.location:models/Conductor///PointingToDeclaration/-git-hub-classroom-template/models/-conductor/index.html
+$dokka.location:models/Conductor/Conductor/#/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/-conductor.html
+$dokka.location:models/Conductor/Conductor/#kotlin.String#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/-conductor.html
+$dokka.location:models/Conductor/getNom/#/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/get-nom.html
+$dokka.location:models/Conductor/getSalari/#/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/get-salari.html
+$dokka.location:models/Conductor/setNom/#kotlin.String/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/set-nom.html
+$dokka.location:models/Conductor/setSalari/#kotlin.Double/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/set-salari.html
+$dokka.location:models/Conductor/toString/#/PointingToDeclaration/-git-hub-classroom-template/models/-conductor/to-string.html
+$dokka.location:org.example.controllers////PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/index.html
+$dokka.location:org.example.controllers/MainKt///PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/index.html
+$dokka.location:org.example.controllers/MainKt/abrirScanner/#/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/abrir-scanner.html
+$dokka.location:org.example.controllers/MainKt/altaBus/#java.util.Scanner#kotlin.collections.MutableList[models.Autobus]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/alta-bus.html
+$dokka.location:org.example.controllers/MainKt/altaCond/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/alta-cond.html
+$dokka.location:org.example.controllers/MainKt/cerrarScanner/#java.util.Scanner/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/cerrar-scanner.html
+$dokka.location:org.example.controllers/MainKt/comprarBitllet/#kotlin.collections.MutableList[models.Autobus]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/comprar-bitllet.html
+$dokka.location:org.example.controllers/MainKt/listBus/#kotlin.collections.MutableList[models.Autobus]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/list-bus.html
+$dokka.location:org.example.controllers/MainKt/listCond/#kotlin.collections.MutableList[models.Conductor]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/list-cond.html
+$dokka.location:org.example.controllers/MainKt/main/#/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/main.html
+$dokka.location:org.example.controllers/MainKt/menu/#java.util.Scanner#kotlin.collections.MutableList[models.Autobus]#kotlin.collections.MutableList[models.Conductor]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/menu.html
+$dokka.location:org.example.controllers/MainKt/menuAdmin/#java.util.Scanner#kotlin.collections.MutableList[models.Autobus]#kotlin.collections.MutableList[models.Conductor]/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/menu-admin.html
+$dokka.location:org.example.controllers/MainKt/menuText/#/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/menu-text.html
+$dokka.location:org.example.controllers/MainKt/menuTextAdmin/#/PointingToDeclaration/-git-hub-classroom-template/org.example.controllers/-main-kt/menu-text-admin.html
+$dokka.location:utilities////PointingToDeclaration/-git-hub-classroom-template/utilities/index.html
+$dokka.location:utilities/MyUtilsKt///PointingToDeclaration/-git-hub-classroom-template/utilities/-my-utils-kt/index.html
+$dokka.location:utilities/MyUtilsKt/readSomething/#/PointingToDeclaration/-git-hub-classroom-template/utilities/-my-utils-kt/read-something.html
+interfaces
+models
+org.example.controllers
+utilities
+
