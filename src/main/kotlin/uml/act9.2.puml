@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+:conductor:
+:administrador:
+:cliente:
+
+rectangle servei_D'Autobusos {
+    conductor --> (autobus)
+
+    cliente --> (tiquete)
+    (tiquete).>(autobus) : include
+    cliente --> (autobus)
+
+    (lista de autobuses).>(autobus) : include
+
+    administrador --> (lista conductores)
+    administrador --> (lista de autobuses)
+    administrador --> (alta de autobuses)
+    administrador --> (alta de conductores)
+
+}
+
+@enduml
