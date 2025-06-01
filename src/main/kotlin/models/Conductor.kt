@@ -1,31 +1,62 @@
 package models
 
+/**
+ * Representa un conductor.
+ *
+ * @property nom Nombre del conductor.
+ * @property salari Salario del conductor.
+ */
 class Conductor() {
     private var nom = ""
     private var salari = 0.0
 
-    //Getters i setters
-    fun getNom() : String {
+    /**
+     * Obtiene el nombre del conductor.
+     * @return Nombre como String.
+     */
+    fun getNom(): String {
         return nom
     }
-    fun setNom(nom : String) {
+
+    /**
+     * Establece el nombre del conductor.
+     * @param nom Nombre a asignar.
+     */
+    fun setNom(nom: String) {
         this.nom = nom
     }
 
-    fun getSalari() : Double {
+    /**
+     * Obtiene el salario del conductor.
+     * @return Salario como Double.
+     */
+    fun getSalari(): Double {
         return salari
     }
-    fun setSalari(salari : Double) {
+
+    /**
+     * Establece el salario del conductor.
+     * @param salari Salario a asignar.
+     */
+    fun setSalari(salari: Double) {
         this.salari = salari
     }
 
-    //Constructor
-    constructor(nom : String, salari: Double): this() {
-        this.salari = salari
+    /**
+     * Constructor para crear un conductor con nombre y salario.
+     *
+     * @param nom Nombre del conductor.
+     * @param salari Salario del conductor.
+     */
+    constructor(nom: String, salari: Double) : this() {
         this.nom = nom
+        this.salari = salari
     }
 
-    //Override
+    /**
+     * Representación en cadena del conductor.
+     * @return String con el nombre y salario.
+     */
     override fun toString(): String {
         return "El conductor -> ${getNom()}, ${getSalari()}"
     }
